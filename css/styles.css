@@ -690,31 +690,37 @@ nav {
 
 .card-thumb {
 	position: relative;
-	overflow-x: hidden;
-	overflow-y: auto;
-
 	overflow: hidden;
 }
 
 .pop-up-descr {
 	position: absolute;
+	overflow: auto;
 	top: 0;
 	left: 0;
 	display: block;
 	width: 100%;
-
-	margin: 0;
-	padding: 63px 24px;
-	font-size: 18px;
-	line-height: 1.56;
-	color: #ffffff;
-	background: rgba(33, 150, 243, 0.9);
+	height: 100%;
 
 	transform: translateY(100%);
 
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
 	transition-property: transform;
+}
+
+.text-thumb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 63px 24px;
+	font-size: 18px;
+	line-height: 1.56;
+	color: #ffffff;
+	background: rgba(33, 150, 243, 0.9);
 }
 
 .result-link:hover .pop-up-descr,
